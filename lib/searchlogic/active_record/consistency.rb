@@ -5,9 +5,9 @@ module Searchlogic
     module Consistency
       def self.included(klass)
         klass.class_eval do
-          alias_method_chain :merge_joins, :singularity
-          alias_method_chain :merge_joins, :consistent_conditions
-          alias_method_chain :merge_joins, :merged_duplicates
+          # alias_method_chain :merge_joins, :singularity
+          # alias_method_chain :merge_joins, :consistent_conditions
+          # alias_method_chain :merge_joins, :merged_duplicates
         end
       end
 
